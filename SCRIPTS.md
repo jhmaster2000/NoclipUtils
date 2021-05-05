@@ -96,7 +96,7 @@ function enableStudioMode() {
 ```
 
 ​
-## Super Mario Galaxy 1/2 Exclusive Scripts
+## Super Mario Galaxy 1/2 Scripts
 You're welcome to try running these on other games, but it will most likely just error out.
 
 ### Display Object Slider
@@ -187,4 +187,17 @@ function SMG_allObjectsVisible() {
 	});
 	return 'SMG - Forced all objects to be visible.';
 }
+```
+
+​
+## Wii Sports Resort Scripts
+You're welcome to try running these on other games, but it will most likely just error out.
+
+### Toggle Vertex Colors
+Enables/disables vertex colors on Wii Sports Resort.
+> This script was provided publicly by Jasper on the noclip Discord.
+
+**Usage:** Run as shown below to disable, change `false` to `true` to re-enable.
+```js
+main.scene.modelInstances.forEach((v) => v.setVertexColorsEnabled(false));
 ```
