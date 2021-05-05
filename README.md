@@ -32,6 +32,7 @@ To use these scripts, you can either manually copy and paste them directly on th
 
 - **[Katamari Damacy Scripts](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#katamari-damacy-scripts)**
   - [Toggle Rendering Paths](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#toggle-rendering-paths)
+  - [Display Object Slider](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#display-object-slider-1)
 
 - **[Wii Sports Resort Scripts](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#wii-sports-resort-scripts)**
   - [Toggle Vertex Colors](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#toggle-vertex-colors)
