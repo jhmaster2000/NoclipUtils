@@ -15,6 +15,7 @@ To use these scripts, you can either manually copy and paste them directly on th
   - [Teleport Camera](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#teleport-camera)
   - [Toggle Camera Upward Axis](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#toggle-camera-upward-axis)
   - [Toggle Pointer Lock](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#toggle-pointer-lock)
+  - [Change Game Time Speed Scale](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#change-game-time-speed-scale)
   - [Toggle noclip.website Branding](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#toggle-noclipwebsite-branding)
   - [Enable Studio Mode](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#enable-studio-mode)
 
