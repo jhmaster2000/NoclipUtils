@@ -19,7 +19,7 @@ To use these scripts, you can either manually copy and paste them directly on th
   - [Toggle noclip.website Branding](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#toggle-noclipwebsite-branding)
   - [Enable Studio Mode](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#enable-studio-mode)
 
-- **[Super Mario Galaxy 1/2 Scripts](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#super-mario-galaxy-12-exclusive-scripts)**
+- **[Super Mario Galaxy 1/2 Scripts](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#super-mario-galaxy-12-scripts)**
   - [Display Object Slider](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#display-object-slider)
   - [Teleport To Object](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#teleport-to-object)
   - [Warp Object to Camera](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#warp-object-to-camera)
