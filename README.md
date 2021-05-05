@@ -22,3 +22,6 @@ To use these scripts, you can either manually copy and paste them directly on th
   - [Teleport To Object](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#teleport-to-object)
   - [Warp Object to Camera](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#warp-object-to-camera)
   - [Force All Objects Visible](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#force-all-objects-visible)
+
+- [Wii Sports Resort Scripts](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#wii-sports-resort-scripts)
+  - [Toggle Vertex Colors](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#toggle-vertex-colors)
