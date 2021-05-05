@@ -3,6 +3,8 @@
 
 This list is categorized by which part of the website the scripts are for.
 
+- [Contents Index](https://github.com/jhmaster2000/NoclipUtils#contents-index)
+
 ## Global Scripts
 These scripts (hopefully) work anywhere on the website.
 
