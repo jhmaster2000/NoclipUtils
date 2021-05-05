@@ -37,7 +37,7 @@ To use these scripts, you can either manually copy and paste them directly on th
 - **[Wii Sports Resort Scripts](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#wii-sports-resort-scripts)**
   - [Toggle Vertex Colors](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#toggle-vertex-colors)
 
-- [Banjo-Tooie](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#banjo-tooie)
+- **[Banjo-Tooie](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#banjo-tooie)**
   - [Toggle Objects Visibility](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#toggle-objects-visibility)
 
 ​
