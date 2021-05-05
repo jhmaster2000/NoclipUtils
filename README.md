@@ -14,6 +14,7 @@ To use these scripts, you can either manually copy and paste them directly on th
 - [Global Scripts](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#global-scripts)
   - [Teleport Camera](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#teleport-camera)
   - [Toggle Camera Upward Axis](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#toggle-camera-upward-axis)
+  - [Toggle Pointer Lock](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#toggle-pointer-lock)
   - [Toggle noclip.website Branding](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#toggle-noclipwebsite-branding)
   - [Enable Studio Mode](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#enable-studio-mode)
 
@@ -25,6 +26,7 @@ To use these scripts, you can either manually copy and paste them directly on th
 
 - [Zelda Wind Waker Scripts](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#zelda-wind-waker-scripts)
   - [Toggle Forcing Time to Pass Everywhere](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#toggle-forcing-time-to-pass-everywhere)
+  - [Change Time of Day](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#change-time-of-day)
   - [Change Wind Power](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#change-wind-power)
 
 - [Katamari Damacy Scripts](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#katamari-damacy-scripts)
