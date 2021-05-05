@@ -69,6 +69,24 @@ main.viewer.inputManager.usePointerLock = false
 ```
 
 ​
+### Change Game Time Speed Scale
+Changes the general speed scale of everything being rendered.
+> This script was provided publicly by Jasper on the noclip Discord.
+
+> ⚠️ This script may not work with some games.
+
+> ⚠️ **Setting any invalid value will freeze noclip until a page refresh.**
+
+**Usage:** Change `1` below to the number you want the time speed multiplied by.
+- The default value for all games is `1`
+- Setting this value to `0` will 'pause' the game's time
+- Some games may intentionally set a max value internally due to technical limitations
+  - Setting values higher than the internal max of a game will just internally round it down to the max
+```js
+main.sceneTimeScale = 1
+```
+
+​
 ### Toggle noclip.website Branding
 Toggles the bottom-right noclip branding used by Jasper on his Twitter videos.
 > The `main.ui.recordingBranding.v()` code snippet was provided publicly by Jasper on the noclip Discord.
