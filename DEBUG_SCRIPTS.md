@@ -36,5 +36,5 @@ On-screen dynamic slider with selector that takes an array of objects as input a
 main.debugJunk.interactiveVizSliderSelect(Array: objects, String: property, Function: callback)
 ```
 - objects: An array of objects to be filtered into the slider.
-- property: The boolean property in the root of the objects of the array to filter the objects with. Only objects whose property is `true` will be put into the slider.
-- callback: (Optional parameter) A function to be called when an object is selected on the slider. Receives one parameter with the index of the selected object as a Number.
+- property: (Optional parameter - Default value: `'visible'`) The boolean property in the root of the objects of the array to filter the objects with. Only objects whose property is `true` will be put into the slider.
+- callback: (Optional parameter - Default value: none) A function to be called when an object is selected on the slider. Receives one parameter with the index of the selected object as a Number.
