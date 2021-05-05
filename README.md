@@ -25,6 +25,10 @@ To use these scripts, you can either manually copy and paste them directly on th
 
 - [Zelda Wind Waker Scripts](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#zelda-wind-waker-scripts)
   - [Toggle Forcing Time to Pass Everywhere](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#toggle-forcing-time-to-pass-everywhere)
+  - [Change Wind Power](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#change-wind-power)
+
+- [Katamari Damacy Scripts](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#katamari-damacy-scripts)
+  - [Toggle Rendering Paths](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#toggle-rendering-paths)
 
 - [Wii Sports Resort Scripts](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#wii-sports-resort-scripts)
   - [Toggle Vertex Colors](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#toggle-vertex-colors)
