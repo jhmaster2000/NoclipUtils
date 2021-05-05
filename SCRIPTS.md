@@ -208,6 +208,42 @@ main.scene.globals.g_env_light.forceTimePass = true
 ```
 
 ​
+### Change Wind Power
+Changes the power (strength/speed) of the wind. This affects both wind visuals but also things that react to the wind, such as flags.
+> This script was provided publicly by Jasper on the noclip Discord.
+
+> ⚠️ This script can potentially cause noclip to freeze with invalid values used, you will need to reload the page if this occurs.
+
+Keep in mind the wind change is gradual and not instant, it **changes at approximately 100 units per second**.
+
+For example, if you set the wind power to `1000`, it will first take **10 seconds** to actually reach that, and when reversing this (by setting wind power back to 0) it will also take **10 seconds** to actually slow back down.
+
+**Usage:** Zero is the default value. Change `0` below to any number you want. Higher number = more powerful wind.
+- Negative values behave the same as if `0` was set.
+- There is no value that causes the wind to stop.
+- `Infinity` works and will keep increasing the wind speed at 100 units per second constantly.
+```js
+main.scene.globals.g_env_light.customWindPower = 0
+```
+
+​
+
+​
+## Katamari Damacy Scripts
+
+### Toggle Rendering Paths
+Enables/disables the visual rendering of paths used by certain objects to move along.
+
+**Keep in mind the paths will render through walls and other things, this is intended.**
+> This script was provided publicly by pfedak (another noclip developer) on the noclip Discord.
+
+> ⚠️ This is script will **not** throw an error when used on other games, but it **still won't do anything** (most likely) regardless.
+
+**Usage:** Run as shown below to enable rendering paths, change `true` to `false` to disable it.
+```js
+main.viewer.scene.drawPaths = true
+```
+​
 
 ​
 ## Wii Sports Resort Scripts
