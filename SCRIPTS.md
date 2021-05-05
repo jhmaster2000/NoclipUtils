@@ -290,6 +290,20 @@ Enables/disables the visual rendering of paths used by certain objects to move a
 ```js
 main.viewer.scene.drawPaths = true
 ```
+
+​
+### Display Object Slider
+Displays the object picker slider for all currently visible objects. Click **Select** to disable it.
+
+Sliding the slider will make all objects not covered by the slider not visible until the slider is disabled.
+
+Clicking **Select** will also make the currently selected object on the slider flash for 3 seconds and print the object in the console.
+> This script was provided publicly by Jasper on the noclip Discord.
+
+**Usage:** Run as shown below.
+```js
+main.debugJunk.interactiveVizSliderSelect(main.scene.objectRenderers)
+```
 ​
 
 ​
