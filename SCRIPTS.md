@@ -59,6 +59,16 @@ function toggleCameraUpAxisMode() {
 ```
 
 ​
+### Toggle Pointer Lock
+Enables/disables noclip locking and hiding your pointer (mouse cursor) when dragging the camera around.
+> This script was provided publicly by Jasper on the noclip Discord.
+
+**Usage:** Run as shown below to disable pointer lock, change `false` to `true` to re-enable it.
+```js
+main.viewer.inputManager.usePointerLock = false
+```
+
+​
 ### Toggle noclip.website Branding
 Toggles the bottom-right noclip branding used by Jasper on his Twitter videos.
 > The `main.ui.recordingBranding.v()` code snippet was provided publicly by Jasper on the noclip Discord.
@@ -205,6 +215,25 @@ Some islands on The Great Sea of Zelda Wind Waker freeze the passing of time whe
 * You may need to wait some time for the time to reach a certain point before it freezes again upon disabling forced time passing depending on what the current time is.
 ```js
 main.scene.globals.g_env_light.forceTimePass = true
+```
+
+​
+### Change Time of Day
+Changes the current time of the day. Keep in mind the information on the script above when using this one.
+> This script was provided publicly by Jasper on the noclip Discord.
+
+> ⚠️ **Setting any invalid value, including negative numbers, will freeze noclip until a page refresh.**
+
+**Usage:** Change `240` below to any number you want. Some reference values are listed below:
+- 0: Midnight (12 AM)
+- 15: 1 AM **`(15 time units = 1 hour || 1 time unit = 4 minutes)`**
+- 100: Sunrise (6:40 AM)
+- 180: Noon (12 PM)
+- 240: Initial value when loading ZWW on noclip (4 PM)
+- 280: Sunset (6:40 PM)
+- 360+: Midnight (Loops back to 0)
+```js
+main.scene.globals.g_env_light.curTime = 240
 ```
 
 ​
