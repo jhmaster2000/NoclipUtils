@@ -9,6 +9,8 @@ If you are a developer either trying to make your own scripts like the ones on t
 - [debugJunk](https://github.com/jhmaster2000/NoclipUtils/blob/master/DEBUG_SCRIPTS.md#debugjunk)
   - [hexdump](https://github.com/jhmaster2000/NoclipUtils/blob/master/DEBUG_SCRIPTS.md#hexdump)
   - [interactiveVizSliderSelect](https://github.com/jhmaster2000/NoclipUtils/blob/master/DEBUG_SCRIPTS.md#interactivevizsliderselect)
+- [inputManager](https://github.com/jhmaster2000/NoclipUtils/blob/master/DEBUG_SCRIPTS.md#inputmanager)
+  - [registerKeyTrigger](https://github.com/jhmaster2000/NoclipUtils/blob/master/DEBUG_SCRIPTS.md#registerkeytrigger)
 
 ## debugJunk
 This category is for scripts located in the aptly named `main.debugJunk` object on noclip's console.
@@ -38,3 +40,27 @@ main.debugJunk.interactiveVizSliderSelect(Array: objects, String: property, Func
 - objects: An array of objects to be filtered into the slider.
 - property: (Optional parameter - Default value: `'visible'`) The boolean property in the root of the objects of the array to filter the objects with. Only objects whose property is `true` will be put into the slider.
 - callback: (Optional parameter - Default value: none) A function to be called when an object is selected on the slider. Receives one parameter with the index of the selected object as a Number.
+
+​
+
+​
+## inputManager
+This category is for scripts located in the `main.viewer.inputManager` object on noclip's console.
+
+### registerKeyTrigger
+Utility for registering a keybind to run some code when pressed on noclip.
+
+> ⚠️ These keybinds are active globally. Keep this in mind before assigning game-specific code to one.
+
+> ⚠️ **If an uncaught error happens in a keybind's code, noclip will freeze and need to be reloaded.**
+
+Multiple functions can be assigned to the same key by simply calling `registerKeyTrigger` on the same key twice with different callbacks.
+
+The execution order of multiple callbacks assigned to the same key will be the same as they were assigned.
+
+**Usage:**
+```js
+main.viewer.inputManager.registerKeyTrigger(String: keycode, Function: callback)
+```
+- keycode: The keyboard key to assign as keybind. Example: `KeyG` (Assigns the letter **G** key)
+- callback: The function to run when the keybind is pressed.
