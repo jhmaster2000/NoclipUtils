@@ -23,5 +23,8 @@ To use these scripts, you can either manually copy and paste them directly on th
   - [Warp Object to Camera](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#warp-object-to-camera)
   - [Force All Objects Visible](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#force-all-objects-visible)
 
+- [Zelda Wind Waker Scripts](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#zelda-wind-waker-scripts)
+  - [Toggle Forcing Time to Pass Everywhere](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#toggle-forcing-time-to-pass-everywhere)
+
 - [Wii Sports Resort Scripts](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#wii-sports-resort-scripts)
   - [Toggle Vertex Colors](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#toggle-vertex-colors)
