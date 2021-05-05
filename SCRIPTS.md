@@ -304,6 +304,7 @@ Clicking **Select** will also make the currently selected object on the slider f
 ```js
 main.debugJunk.interactiveVizSliderSelect(main.scene.objectRenderers)
 ```
+
 ​
 
 ​
@@ -316,4 +317,20 @@ Enables/disables vertex colors on Wii Sports Resort.
 **Usage:** Run as shown below to disable, change `false` to `true` to re-enable.
 ```js
 main.scene.modelInstances.forEach((v) => v.setVertexColorsEnabled(false));
+```
+
+​
+
+​
+## Banjo-Tooie
+
+### Toggle objects visibility
+Enables/disables visibility of *most* objects (keeping things like main level model/skybox/etc)
+
+**May not work on all maps.**
+> This script was provided publicly by Jasper on the noclip Discord.
+
+**Usage:** Run as shown below to hide objects, change `false` to `true` to unhide.
+```js
+main.scene.geoRenderers.slice(3).forEach((v) => v.visible = false)
 ```
