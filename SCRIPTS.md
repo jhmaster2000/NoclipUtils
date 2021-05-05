@@ -1,9 +1,11 @@
 # noclip.website scripts list
-> Please read the README.md of this repository if you haven't yet.
+> **Please read the README.md of this repository if you haven't yet.**
 
 This list is categorized by which part of the website the scripts are for.
 
-- [Contents Index](https://github.com/jhmaster2000/NoclipUtils#contents-index)
+You're welcome to try running game-specific scripts on other games, but they will most likely just error out.
+
+- **[Contents Index](https://github.com/jhmaster2000/NoclipUtils#contents-index)**
 
 ## Global Scripts
 These scripts (hopefully) work anywhere on the website.
@@ -96,8 +98,9 @@ function enableStudioMode() {
 ```
 
 ​
+
+​
 ## Super Mario Galaxy 1/2 Scripts
-You're welcome to try running these on other games, but it will most likely just error out.
 
 ### Display Object Slider
 Displays the object picker slider for all currently visible objects. Click **Select** to disable it.
@@ -190,8 +193,24 @@ function SMG_allObjectsVisible() {
 ```
 
 ​
+
+​
+## Zelda Wind Waker Scripts
+
+### Toggle Forcing Time to Pass Everywhere
+Some islands on The Great Sea of Zelda Wind Waker freeze the passing of time when you enter them. This script can override this time freeze and force time to pass even on those islands.
+> This script was provided publicly by Jasper on the noclip Discord.
+
+**Usage:** Run as shown below to enable forced time passing, change `true` to `false` to disable.
+* You may need to wait some time for the time to reach a certain point before it freezes again upon disabling forced time passing depending on what the current time is.
+```js
+main.scene.globals.g_env_light.forceTimePass = true
+```
+
+​
+
+​
 ## Wii Sports Resort Scripts
-You're welcome to try running these on other games, but it will most likely just error out.
 
 ### Toggle Vertex Colors
 Enables/disables vertex colors on Wii Sports Resort.
