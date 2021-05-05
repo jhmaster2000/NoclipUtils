@@ -9,3 +9,16 @@ Unofficial collection of random utility scripts to use on the console of https:/
 
 ## Usage
 To use these scripts, you can either manually copy and paste them directly on the console everytime you want to use them, or you can put them on a JavaScript injection extension for whichever browser you use and have them be injected automatically. (You will still need to open the console to actually run the scripts you want by calling their functions)
+
+## Contents Index
+- [Global Scripts](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#global-scripts)
+  - [Teleport Camera](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#teleport-camera)
+  - [Toggle Camera Upward Axis](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#toggle-camera-upward-axis)
+  - [Toggle noclip.website Branding](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#toggle-noclipwebsite-branding)
+  - [Enable Studio Mode](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#enable-studio-mode)
+
+- [Super Mario Galaxy 1/2 Scripts](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#super-mario-galaxy-12-exclusive-scripts)
+  - [Display Object Slider](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#display-object-slider)
+  - [Teleport To Object](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#teleport-to-object)
+  - [Warp Object to Camera](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#warp-object-to-camera)
+  - [Force All Objects Visible](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#force-all-objects-visible)
