@@ -368,7 +368,7 @@ main.scene.modelInstances.forEach((v) => v.setVertexColorsEnabled(false));
 ​
 
 ​
-## Banjo-Tooie
+## Banjo-Tooie Scripts
 
 ### Toggle objects visibility
 Enables/disables visibility of *most* objects (keeping things like main level model/skybox/etc)
