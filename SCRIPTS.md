@@ -87,6 +87,22 @@ main.sceneTimeScale = 1
 ```
 
 ​
+### Change Orthographic Camera Near and Far Planes
+Changes the near and far planes used by the orthographic camera.
+
+*If you don't know what near and far planes are, you probably shouldn't try using this script.*
+> This script was provided publicly by Jasper on the noclip Discord.
+
+> ⚠️ This script only has effect with the orthographic camera in use.
+
+**Usage:** Run as below, changing the numbers to the desired new value.
+- The numbers shown below are the default values.
+```js
+main.viewer.cameraController.nearPlane = -100000
+main.viewer.cameraController.farPlane = 100000
+```
+
+​
 ### Toggle noclip.website Branding
 Toggles the bottom-right noclip branding used by Jasper on his Twitter videos.
 > The `main.ui.recordingBranding.v()` code snippet was provided publicly by Jasper on the noclip Discord.
@@ -218,6 +234,36 @@ function SMG_allObjectsVisible() {
 	});
 	return 'SMG - Forced all objects to be visible.';
 }
+```
+
+​
+### Disable Skyboxes Following the Camera
+Prevents the skyboxes from following the camera, so you can move outside of the skyboxes and zoom in on them.
+> This script was provided publicly by Jasper on the noclip Discord.
+
+> ⚠️ This script requires reloading the page to disable properly.
+> 
+> **Changing `false` to `true` on this script will *NOT* do what you expect!**
+
+**Usage:** Run as shown below.
+```js
+main.scene.sceneObjHolder.nameObjHolder.nameObjs.forEach((v) => v.isSkybox = false)
+```
+
+​
+
+​
+## Paper Mario: The Thousand Year Door Scripts
+
+### Remove background
+Removes the background image of the current map.
+> This script was provided publicly by Jasper on the noclip Discord.
+
+> ⚠️ This script requires reloading the map or the tab to disable.
+
+**Usage:** Run as shown below.
+```js
+main.scene.backgroundRenderer = null
 ```
 
 ​
