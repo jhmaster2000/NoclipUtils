@@ -16,6 +16,7 @@ To use these scripts, you can either manually copy and paste them directly on th
   - [Toggle Camera Upward Axis](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#toggle-camera-upward-axis)
   - [Toggle Pointer Lock](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#toggle-pointer-lock)
   - [Change Game Time Speed Scale](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#change-game-time-speed-scale)
+  - [Change Orthographic Camera Near and Far Planes](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#change-orthographic-camera-near-and-far-planes)
   - [Toggle noclip.website Branding](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#toggle-noclipwebsite-branding)
   - [Enable Studio Mode](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#enable-studio-mode)
 
@@ -24,6 +25,10 @@ To use these scripts, you can either manually copy and paste them directly on th
   - [Teleport To Object](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#teleport-to-object)
   - [Warp Object to Camera](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#warp-object-to-camera)
   - [Force All Objects Visible](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#force-all-objects-visible)
+  - [Disable Skyboxes Following the Camera](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#disable-skyboxes-following-the-camera)
+
+- **[Paper Mario: The Thousand Year Door Scripts](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#paper-mario-the-thousand-year-door-scripts)**
+  - [Remove Background](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#remove-background)
 
 - **[Zelda Wind Waker Scripts](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#zelda-wind-waker-scripts)**
   - [Toggle Forcing Time to Pass Everywhere](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#toggle-forcing-time-to-pass-everywhere)
@@ -37,7 +42,7 @@ To use these scripts, you can either manually copy and paste them directly on th
 - **[Wii Sports Resort Scripts](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#wii-sports-resort-scripts)**
   - [Toggle Vertex Colors](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#toggle-vertex-colors)
 
-- **[Banjo-Tooie](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#banjo-tooie)**
+- **[Banjo-Tooie Scripts](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#banjo-tooie-scripts)**
   - [Toggle Objects Visibility](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#toggle-objects-visibility)
 
 ​
