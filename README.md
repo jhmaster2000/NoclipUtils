@@ -42,6 +42,9 @@ To use these scripts, you can either manually copy and paste them directly on th
 - **[Wii Sports Resort Scripts](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#wii-sports-resort-scripts)**
   - [Toggle Vertex Colors](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#toggle-vertex-colors)
 
+- **[Pilotwings 64 Scripts](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#pilotwings-64-scripts)**
+  - [Spawn Objects](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#spawn-objects)
+
 - **[Banjo-Tooie Scripts](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#banjo-tooie-scripts)**
   - [Toggle Objects Visibility](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#toggle-objects-visibility)
 
