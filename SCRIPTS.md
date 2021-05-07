@@ -368,6 +368,32 @@ main.scene.modelInstances.forEach((v) => v.setVertexColorsEnabled(false));
 ​
 
 ​
+## Pilotwings 64
+
+### Spawn Objects
+Spawns into the map brand new objects based off their numeric ID in the game.
+
+*I don't know of any list for these IDs, so just try some IDs and see what they are.*
+> This script was provided publicly by Jasper on the noclip Discord.
+
+**Usage:** `PW64_spawnObject(Number: objID, Number: x, Number: y, Number: z)`
+- objID: Required parameter. The ID of the object to spawn. Must be between **0** and **362**.
+  - The error: `Uncaught TypeError: Cannot read property 'uvmd' of undefined` means you entered an invalid ID.
+- x, y and z: (Optional parameters - All default to `0`) The X, Y (height) and Z coordinates to spawn the object at.
+```js
+function PW64_spawnObject(objID, x, y, z) {
+    let obj = main.viewer.scene.spawnObject(objID);
+    x = x || 0; y = y || 0; z = z || 0;
+    obj.modelMatrix[12] = x;
+    obj.modelMatrix[14] = y;
+    obj.modelMatrix[13] = z;
+    return 'Sucessfully spawned object ' + objID + ' at ' + x + ' ' + y + ' ' + z
+}
+```
+
+​
+
+​
 ## Banjo-Tooie Scripts
 
 ### Toggle objects visibility
