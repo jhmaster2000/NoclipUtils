@@ -368,7 +368,7 @@ main.scene.modelInstances.forEach((v) => v.setVertexColorsEnabled(false));
 ​
 
 ​
-## Pilotwings 64
+## Pilotwings 64 Scripts
 
 ### Spawn Objects
 Spawns into the map brand new objects based off their numeric ID in the game.
