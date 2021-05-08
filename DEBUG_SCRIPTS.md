@@ -6,7 +6,7 @@ __**This separate list is dedicated to more technical scripts that have little o
 If you are a developer either trying to make your own scripts like the ones on this repository or contributing to noclip directly, some of these may come in handy for you.
 
 # Contents Index
-- [debugJunk](https://github.com/jhmaster2000/NoclipUtils/blob/master/DEBUG_SCRIPTS.md#debugjunk)
+- [debugJunk](#debugjunk)
   - [hexdump](https://github.com/jhmaster2000/NoclipUtils/blob/master/DEBUG_SCRIPTS.md#hexdump)
   - [interactiveVizSliderSelect](https://github.com/jhmaster2000/NoclipUtils/blob/master/DEBUG_SCRIPTS.md#interactivevizsliderselect)
 - [inputManager](https://github.com/jhmaster2000/NoclipUtils/blob/master/DEBUG_SCRIPTS.md#inputmanager)
