@@ -60,4 +60,4 @@ To use these scripts, you can either manually copy and paste them directly on th
   - [Toggle Objects Visibility](/SCRIPTS.md#toggle-objects-visibility)
 
 ​
-- [Debug Scripts](/DEBUG_SCRIPTS.md) (DEBUG_SCRIPTS.md)
+- [Debug Scripts](/DEBUG_SCRIPTS.md)
