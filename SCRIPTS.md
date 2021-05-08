@@ -77,6 +77,7 @@ Changes the general speed scale of everything being rendered.
 - Setting this value to `0` will 'pause' the game's time
 - Some games may intentionally set a max value internally due to technical limitations
   - Setting values higher than the internal max of a game will just internally round it down to the max
+
 ```js
 main.sceneTimeScale = 1
 ```
@@ -92,6 +93,7 @@ Changes the near and far planes used by the orthographic camera.
 
 **Usage:** Run as below, changing the numbers to the desired new value.
 - The numbers shown below are the default values.
+
 ```js
 main.viewer.cameraController.nearPlane = -100000
 main.viewer.cameraController.farPlane = 100000
@@ -146,6 +148,8 @@ Changes how fast the camera looks around when panning.
 - Higher values mean lower sensitivity. `Infinity` is valid and makes mouse panning impossible.
 - Negative values are valid and invert the panning axes.
 - ⚠️ Setting `0` or other invalid values will freeze the camera irreversibly until a page refresh.
+
+
 ```js
 main.viewer.cameraController.mouseLookSpeed = 500
 ```
@@ -160,6 +164,7 @@ Changes smoothness & slipperiness of the camera when panning to look around.
 - Values above `1` will make the camera panning build up speed rather than slowing down.
 - Negative values are extremely buggy and shouldn't be used.
 - ⚠️ Negative values or values above `1` can potentially cause a blackscreen until a page refresh.
+
 ```js
 let t_mLDv = 0
 main.viewer.cameraController.mouseLookDragFast = t_mLDv;
@@ -176,6 +181,7 @@ Changes how fast the camera fully stops after you stop moving around.
 - Values above `1` will make the camera build up speed rather than slowing down.
 - Negative values are extremely buggy and shouldn't be used.
 - ⚠️ Negative values or values above `1` can potentially cause a blackscreen until a page refresh.
+
 ```js
 main.viewer.cameraController.keyMoveDrag = 0.8
 ```
