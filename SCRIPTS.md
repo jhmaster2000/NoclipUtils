@@ -149,7 +149,6 @@ Changes how fast the camera looks around when panning.
 - Negative values are valid and invert the panning axes.
 - ⚠️ Setting `0` or other invalid values will freeze the camera irreversibly until a page refresh.
 
-
 ```js
 main.viewer.cameraController.mouseLookSpeed = 500
 ```
@@ -214,6 +213,7 @@ Teleports the camera to the targetted object.
 **Usage:** `SMG_teleportTo(String: objname, Number: index)`
 - objname: Must be the object's internal SMG name, for example `AstroCore` for the Comet Observatory's core.
 - index: (Optional parameter - Default: 0) If there are multiple instances of an object, such as `Coin`, use this 0-indexed incrementing value to pick between instances.
+
 ```js
 function SMG_teleportTo(objname, index) {
 	let objectList = main.scene.sceneObjHolder.nameObjHolder.nameObjs;
@@ -237,6 +237,7 @@ Warps (teleports) a targetted object to the current camera position.
 **Usage:** `SMG_warpHere(String: objname, Number: index)`
 - objname: Must be the object's internal SMG name, for example `AstroCore` for the Comet Observatory's core.
 - index: (Optional parameter - Default: 0) If there are multiple instances of an object, such as `Coin`, use this 0-indexed incrementing value to pick between instances.
+
 ```js
 function SMG_warpHere(objname, index) {
 	let objectList = main.scene.sceneObjHolder.nameObjHolder.nameObjs;
@@ -301,6 +302,7 @@ Changes the speed at which the camera follows the Lumas on the special **Day in 
 - Setting the value to `0` freezes the camera in place.
 - Values higher than `1` or lower than `0` are buggy and shouldn't be used.
 - Values higher than `2` or lower than `-0.1` will blackscreen until a page refresh.
+
 ```js
 main.currentSceneDesc.controller.cameraK = 0.125
 ```
@@ -332,6 +334,7 @@ Some islands on The Great Sea of Zelda Wind Waker freeze the passing of time whe
 
 **Usage:** Run as shown below to enable forced time passing, change `true` to `false` to disable.
 * You may need to wait some time for the time to reach a certain point before it freezes again upon disabling forced time passing depending on what the current time is.
+
 ```js
 main.scene.globals.g_env_light.forceTimePass = true
 ```
@@ -351,6 +354,7 @@ Changes the current time of the day. Keep in mind the information on the script 
 - 240: Initial value when loading ZWW on noclip (4 PM)
 - 280: Sunset (6:40 PM)
 - 360+: Midnight (Loops back to 0)
+
 ```js
 main.scene.globals.g_env_light.curTime = 240
 ```
@@ -370,6 +374,7 @@ For example, if you set the wind power to `1000`, it will first take **10 second
 - Negative values behave the same as if `0` was set.
 - There is no value that causes the wind to stop.
 - `Infinity` works and will keep increasing the wind speed at 100 units per second constantly.
+
 ```js
 main.scene.globals.g_env_light.customWindPower = 0
 ```
@@ -445,6 +450,7 @@ Enables the Texture Viewer menu for the current map.
 
 **Usage:** Run as shown below.
 - Run `main.ui.textureViewer.setThingList([])` to disable the Texture Viewer.
+
 ```js
 main.ui.textureViewer.setThingList(main.viewer.scene.dataHolder.textureData)
 ```
@@ -478,6 +484,7 @@ Spawns into the map brand new objects based off their numeric ID in the game.
 - objID: Required parameter. The ID of the object to spawn. Must be between **0** and **362**.
   - The error: `Uncaught TypeError: Cannot read property 'uvmd' of undefined` means you entered an invalid ID.
 - x, y and z: (Optional parameters - All default to `0`) The X, Y (height) and Z coordinates to spawn the object at.
+
 ```js
 function PW64_spawnObject(objID, x, y, z) {
 	let obj = main.viewer.scene.spawnObject(objID);
