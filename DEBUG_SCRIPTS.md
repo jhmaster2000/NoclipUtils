@@ -7,10 +7,10 @@ If you are a developer either trying to make your own scripts like the ones on t
 
 # Contents Index
 - [debugJunk](#debugjunk)
-  - [hexdump](https://github.com/jhmaster2000/NoclipUtils/blob/master/DEBUG_SCRIPTS.md#hexdump)
-  - [interactiveVizSliderSelect](https://github.com/jhmaster2000/NoclipUtils/blob/master/DEBUG_SCRIPTS.md#interactivevizsliderselect)
-- [inputManager](https://github.com/jhmaster2000/NoclipUtils/blob/master/DEBUG_SCRIPTS.md#inputmanager)
-  - [registerKeyTrigger](https://github.com/jhmaster2000/NoclipUtils/blob/master/DEBUG_SCRIPTS.md#registerkeytrigger)
+  - [hexdump](#hexdump)
+  - [interactiveVizSliderSelect](#interactivevizsliderselect)
+- [inputManager](#inputmanager)
+  - [registerKeyTrigger](#registerkeytrigger)
 
 ## debugJunk
 This category is for scripts located in the aptly named `main.debugJunk` object on noclip's console.
