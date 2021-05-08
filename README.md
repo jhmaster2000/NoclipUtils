@@ -1,5 +1,5 @@
 # NoclipUtils
-Unofficial collection of random utility scripts to use on the console of https://noclip.website/.
+Unofficial collection of random utility scripts to use on the console of [noclip.website](https://noclip.website/).
 
 ## Disclaimers
 - None of these are guaranteed to remain working and can break at anytime due to changes to the main website without warning.
