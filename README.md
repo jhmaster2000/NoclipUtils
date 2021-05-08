@@ -19,6 +19,10 @@ To use these scripts, you can either manually copy and paste them directly on th
   - [Change Orthographic Camera Near and Far Planes](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#change-orthographic-camera-near-and-far-planes)
   - [Toggle noclip.website Branding](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#toggle-noclipwebsite-branding)
   - [Enable Studio Mode](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#enable-studio-mode)
+  - [Extra Camera Settings](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#extra-camera-settings)
+    - [Change Mouse Panning Sensitivity](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#change-mouse-panning-sensitivity)
+    - [Change Camera Panning Speed Smoothness & Slipperiness](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#change-camera-panning-speed-smoothness--slipperiness)
+    - [Change Camera Movement Slipperiness](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#change-camera-movement-slipperiness)
 
 - **[Super Mario Galaxy 1/2 Scripts](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#super-mario-galaxy-12-scripts)**
   - [Display Object Slider](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#display-object-slider)
@@ -26,6 +30,7 @@ To use these scripts, you can either manually copy and paste them directly on th
   - [Warp Object to Camera](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#warp-object-to-camera)
   - [Force All Objects Visible](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#force-all-objects-visible)
   - [Disable Skyboxes Following the Camera](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#disable-skyboxes-following-the-camera)
+  - [Change Luma Following Camera Speed](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#change-luma-following-camera-speed)
 
 - **[Paper Mario: The Thousand Year Door Scripts](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#paper-mario-the-thousand-year-door-scripts)**
   - [Remove Background](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#remove-background)
@@ -34,6 +39,9 @@ To use these scripts, you can either manually copy and paste them directly on th
   - [Toggle Forcing Time to Pass Everywhere](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#toggle-forcing-time-to-pass-everywhere)
   - [Change Time of Day](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#change-time-of-day)
   - [Change Wind Power](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#change-wind-power)
+
+- **[Mario Kart Wii Scripts](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#mario-kart-wii-scripts)**
+  - [Hide the sun](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#hide-the-sun)
 
 - **[Katamari Damacy Scripts](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#katamari-damacy-scripts)**
   - [Toggle Rendering Paths](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#toggle-rendering-paths)
