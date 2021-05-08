@@ -12,52 +12,52 @@ To use these scripts, you can either manually copy and paste them directly on th
 
 ## Contents Index
 - **[Global Scripts](/SCRIPTS.md#global-scripts)**
-  - [Teleport Camera](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#teleport-camera)
-  - [Toggle Camera Upward Axis](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#toggle-camera-upward-axis)
-  - [Toggle Pointer Lock](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#toggle-pointer-lock)
-  - [Change Game Time Speed Scale](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#change-game-time-speed-scale)
-  - [Change Orthographic Camera Near and Far Planes](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#change-orthographic-camera-near-and-far-planes)
-  - [Toggle noclip.website Branding](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#toggle-noclipwebsite-branding)
-  - [Enable Studio Mode](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#enable-studio-mode)
-  - [Extra Camera Settings](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#extra-camera-settings)
-    - [Change Mouse Panning Sensitivity](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#change-mouse-panning-sensitivity)
-    - [Change Camera Panning Speed Smoothness & Slipperiness](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#change-camera-panning-speed-smoothness--slipperiness)
-    - [Change Camera Movement Slipperiness](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#change-camera-movement-slipperiness)
+  - [Teleport Camera](/SCRIPTS.md#teleport-camera)
+  - [Toggle Camera Upward Axis](/SCRIPTS.md#toggle-camera-upward-axis)
+  - [Toggle Pointer Lock](/SCRIPTS.md#toggle-pointer-lock)
+  - [Change Game Time Speed Scale](/SCRIPTS.md#change-game-time-speed-scale)
+  - [Change Orthographic Camera Near and Far Planes](/SCRIPTS.md#change-orthographic-camera-near-and-far-planes)
+  - [Toggle noclip.website Branding](/SCRIPTS.md#toggle-noclipwebsite-branding)
+  - [Enable Studio Mode](/SCRIPTS.md#enable-studio-mode)
+  - [Extra Camera Settings](/SCRIPTS.md#extra-camera-settings)
+    - [Change Mouse Panning Sensitivity](/SCRIPTS.md#change-mouse-panning-sensitivity)
+    - [Change Camera Panning Speed Smoothness & Slipperiness](/SCRIPTS.md#change-camera-panning-speed-smoothness--slipperiness)
+    - [Change Camera Movement Slipperiness](/SCRIPTS.md#change-camera-movement-slipperiness)
 
-- **[Super Mario Galaxy 1/2 Scripts](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#super-mario-galaxy-12-scripts)**
-  - [Display Object Slider](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#display-object-slider)
-  - [Teleport To Object](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#teleport-to-object)
-  - [Warp Object to Camera](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#warp-object-to-camera)
-  - [Force All Objects Visible](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#force-all-objects-visible)
-  - [Disable Skyboxes Following the Camera](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#disable-skyboxes-following-the-camera)
-  - [Change Luma Following Camera Speed](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#change-luma-following-camera-speed)
+- **[Super Mario Galaxy 1/2 Scripts](/SCRIPTS.md#super-mario-galaxy-12-scripts)**
+  - [Display Object Slider](/SCRIPTS.md#display-object-slider)
+  - [Teleport To Object](/SCRIPTS.md#teleport-to-object)
+  - [Warp Object to Camera](/SCRIPTS.md#warp-object-to-camera)
+  - [Force All Objects Visible](/SCRIPTS.md#force-all-objects-visible)
+  - [Disable Skyboxes Following the Camera](/SCRIPTS.md#disable-skyboxes-following-the-camera)
+  - [Change Luma Following Camera Speed](/SCRIPTS.md#change-luma-following-camera-speed)
 
-- **[Paper Mario: The Thousand Year Door Scripts](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#paper-mario-the-thousand-year-door-scripts)**
-  - [Remove Background](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#remove-background)
+- **[Paper Mario: The Thousand Year Door Scripts](/SCRIPTS.md#paper-mario-the-thousand-year-door-scripts)**
+  - [Remove Background](/SCRIPTS.md#remove-background)
 
-- **[Zelda Wind Waker Scripts](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#zelda-wind-waker-scripts)**
-  - [Toggle Forcing Time to Pass Everywhere](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#toggle-forcing-time-to-pass-everywhere)
-  - [Change Time of Day](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#change-time-of-day)
-  - [Change Wind Power](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#change-wind-power)
+- **[Zelda Wind Waker Scripts](/SCRIPTS.md#zelda-wind-waker-scripts)**
+  - [Toggle Forcing Time to Pass Everywhere](/SCRIPTS.md#toggle-forcing-time-to-pass-everywhere)
+  - [Change Time of Day](/SCRIPTS.md#change-time-of-day)
+  - [Change Wind Power](/SCRIPTS.md#change-wind-power)
 
-- **[Mario Kart Wii Scripts](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#mario-kart-wii-scripts)**
-  - [Hide the sun](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#hide-the-sun)
+- **[Mario Kart Wii Scripts](/SCRIPTS.md#mario-kart-wii-scripts)**
+  - [Hide the sun](/SCRIPTS.md#hide-the-sun)
 
-- **[Katamari Damacy Scripts](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#katamari-damacy-scripts)**
-  - [Toggle Rendering Paths](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#toggle-rendering-paths)
-  - [Display Object Slider](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#display-object-slider-1)
+- **[Katamari Damacy Scripts](/SCRIPTS.md#katamari-damacy-scripts)**
+  - [Toggle Rendering Paths](/SCRIPTS.md#toggle-rendering-paths)
+  - [Display Object Slider](/SCRIPTS.md#display-object-slider-1)
 
-- **[Wii Sports Resort Scripts](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#wii-sports-resort-scripts)**
-  - [Toggle Vertex Colors](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#toggle-vertex-colors)
+- **[Wii Sports Resort Scripts](/SCRIPTS.md#wii-sports-resort-scripts)**
+  - [Toggle Vertex Colors](/SCRIPTS.md#toggle-vertex-colors)
 
-- **[Pilotwings 64 Scripts](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#pilotwings-64-scripts)**
-  - [Enable Texture Viewer](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#enable-texture-viewer)
-  - [Toggle Snow Particles](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#toggle-snow-particles)
-  - [Toggle Skybox](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#toggle-skybox)
-  - [Spawn Objects](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#spawn-objects)
+- **[Pilotwings 64 Scripts](/SCRIPTS.md#pilotwings-64-scripts)**
+  - [Enable Texture Viewer](/SCRIPTS.md#enable-texture-viewer)
+  - [Toggle Snow Particles](/SCRIPTS.md#toggle-snow-particles)
+  - [Toggle Skybox](/SCRIPTS.md#toggle-skybox)
+  - [Spawn Objects](/SCRIPTS.md#spawn-objects)
 
-- **[Banjo-Tooie Scripts](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#banjo-tooie-scripts)**
-  - [Toggle Objects Visibility](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#toggle-objects-visibility)
+- **[Banjo-Tooie Scripts](/SCRIPTS.md#banjo-tooie-scripts)**
+  - [Toggle Objects Visibility](/SCRIPTS.md#toggle-objects-visibility)
 
 ​
-- [Debug Scripts](https://github.com/jhmaster2000/NoclipUtils/blob/master/DEBUG_SCRIPTS.md) (DEBUG_SCRIPTS.md)
+- [Debug Scripts](/DEBUG_SCRIPTS.md) (DEBUG_SCRIPTS.md)
