@@ -251,6 +251,26 @@ main.scene.sceneObjHolder.nameObjHolder.nameObjs.forEach((v) => v.isSkybox = fal
 ```
 
 ​
+### Change Luma Following Camera Speed
+Changes the speed at which the camera follows the Lumas on the special **Day in the Life of a Luma** stage.
+> This script was provided publicly by Jasper on the noclip Discord.
+
+> ⚠️ **This script ONLY WORKS on the Day in the Life of a Luma stage.**
+
+> ⚠️ **Setting any invalid value will freeze noclip until a page refresh.**
+
+**Usage:** Run as shown below, replace `0.125` with the desired value.
+- The default value is `0.125`
+- Lower values mean slower and smoother camera following.
+- Higher values mean faster and rougher camera following.
+- Setting the value to `0` freezes the camera in place.
+- Values higher than `1` or lower than `0` are buggy and shouldn't be used.
+- Values higher than `2` or lower than `-0.1` will blackscreen until a page refresh.
+```js
+main.currentSceneDesc.controller.cameraK = 0.125
+```
+
+​
 
 ​
 ## Paper Mario: The Thousand Year Door Scripts
@@ -317,6 +337,20 @@ For example, if you set the wind power to `1000`, it will first take **10 second
 - `Infinity` works and will keep increasing the wind speed at 100 units per second constantly.
 ```js
 main.scene.globals.g_env_light.customWindPower = 0
+```
+
+​
+
+​
+## Mario Kart Wii Scripts
+
+### Hide the sun
+Disables/enables rendering of the sun and the sun flare effect.
+> This script was provided publicly by Jasper on the noclip Discord.
+
+**Usage:** Run as shown below to hide the sun, change `false` to `true` to show it again.
+```js
+main.scene.baseObjects.find((v) => v.modelInstance && v.modelInstance.name.includes('sun')).modelInstance.visible = false
 ```
 
 ​
