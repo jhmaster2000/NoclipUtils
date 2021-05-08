@@ -11,7 +11,7 @@ Unofficial collection of random utility scripts to use on the console of [noclip
 To use these scripts, you can either manually copy and paste them directly on the console everytime you want to use them, or you can put them on a JavaScript injection extension for whichever browser you use and have them be injected automatically. (You will still need to open the console to actually run the scripts you want by calling their functions)
 
 ## Contents Index
-- **[Global Scripts](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#global-scripts)**
+- **[Global Scripts](/SCRIPTS.md#global-scripts)**
   - [Teleport Camera](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#teleport-camera)
   - [Toggle Camera Upward Axis](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#toggle-camera-upward-axis)
   - [Toggle Pointer Lock](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#toggle-pointer-lock)
