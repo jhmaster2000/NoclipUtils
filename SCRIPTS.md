@@ -370,6 +370,35 @@ main.scene.modelInstances.forEach((v) => v.setVertexColorsEnabled(false));
 ​
 ## Pilotwings 64 Scripts
 
+### Enable Texture Viewer
+Enables the Texture Viewer menu for the current map.
+> This script was provided publicly by Jasper on the noclip Discord.
+
+**Usage:** Run as shown below.
+- Run `main.ui.textureViewer.setThingList([])` to disable the Texture Viewer.
+```js
+main.ui.textureViewer.setThingList(main.viewer.scene.dataHolder.textureData)
+```
+
+​
+### Toggle Snow Particles
+Disables/enables rendering of snow particles on snowy maps.
+
+**Usage:** Run as shown below to disable, change `false` to `true` to re-enable.
+```js
+main.viewer.scene.snowRenderer.visible = false
+```
+
+​
+### Toggle Skybox
+Disables/enables rendering of the skybox.
+
+**Usage:** Run as shown below to disable, change `false` to `true` to re-enable.
+```js
+main.viewer.scene.skyRenderers.forEach(sky => sky.visible = false)
+```
+
+​
 ### Spawn Objects
 Spawns into the map brand new objects based off their numeric ID in the game.
 
