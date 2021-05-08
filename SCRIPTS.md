@@ -5,7 +5,7 @@ This list is categorized by which part of the website the scripts are for.
 
 You're welcome to try running game-specific scripts on other games, but they will most likely just error out.
 
-- **[Contents Index](https://github.com/jhmaster2000/NoclipUtils#contents-index)**
+- **[Contents Index](/#contents-index)**
 
 ## Global Scripts
 These scripts (hopefully) work anywhere on the website.
