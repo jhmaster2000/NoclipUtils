@@ -259,9 +259,7 @@ This also makes objects that require events to appear become visible without nee
 function SMG_allObjectsVisible() {
 	let objectList = main.scene.sceneObjHolder.nameObjHolder.nameObjs;
 	objectList.forEach(o => {
-		o.visibleScenario = true;
-		o.visibleModel = true;
-		o.visibleAlive = true;
+		o.visibleScenario = true; o.visibleModel = true; o.visibleAlive = true;
 	});
 	return 'SMG - Forced all objects to be visible.';
 }
