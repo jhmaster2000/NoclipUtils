@@ -31,7 +31,7 @@ main.debugJunk.hexdump(ArrayBuffer: data, Number: start_offset, Number: length)
 ​
 ### interactiveVizSliderSelect
 On-screen dynamic slider with selector that takes an array of objects as input and filters them by a boolean property.
-> Example usage on the [Display Object Slider](https://github.com/jhmaster2000/NoclipUtils/blob/master/SCRIPTS.md#display-object-slider) for SMG1/2
+> Example usage on the [Display Object Slider](/SCRIPTS.md#display-object-slider) for SMG1/2
 
 **Usage:**
 ```js
