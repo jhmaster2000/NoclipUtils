@@ -16,24 +16,21 @@ Teleports the camera to the specified coordinates.
 **Usage:** `teleport(Number: x, Number: y, Number: z)`
 ```js
 function teleport(x, y, z) {
-	if (!x || !y || !z) return console.warn('All three coordinates required.');
-	if (isNaN(x) || isNaN(y) || isNaN(z)) return console.warn('Invalid coordinates.');
-	
-	if (x === null) x = main.viewer.camera.worldMatrix[12];
-	if (y === null) y = main.viewer.camera.worldMatrix[13];
-	if (z === null) z = main.viewer.camera.worldMatrix[14];
-    
+    if (!x || !y || !z) return console.warn('All three coordinates required.');
+    if (isNaN(x) || isNaN(y) || isNaN(z)) return console.warn('Invalid coordinates.');
+    if (x === null) x = main.viewer.camera.worldMatrix[12];
+    if (y === null) y = main.viewer.camera.worldMatrix[13];
+    if (z === null) z = main.viewer.camera.worldMatrix[14];
     main.viewer.camera.worldMatrix[12] = x;
     main.viewer.camera.worldMatrix[13] = y;
     main.viewer.camera.worldMatrix[14] = z;
     main.viewer.cameraController.forceUpdate = true;
-    
     return console.log('Teleported to: ' + x + ' ' + y + ' ' + z);
 }
 ```
 
 ​
-### Toggle camera upward-axis
+### Toggle Camera Upward-Axis
 Toggles camera upward-axis behavior when turning upside-down/sideways. *Especially useful for the Galaxy games.*
 > The `main.viewer.cameraController.useViewUp` code snippet was provided publicly by Jasper on the noclip Discord.
 
@@ -47,12 +44,10 @@ Hint: Use the keybinds `U` and `O` to tilt the camera on either mode.
 ```js
 function toggleCameraUpAxisMode() {
 	var useViewUp = main.viewer.cameraController.useViewUp;
-	
 	if (useViewUp) {
 		main.viewer.cameraController.useViewUp = false;
 		return 'Camera Z-Axis set to self.';
 	}
-	
 	main.viewer.cameraController.useViewUp = true;
 	return 'Camera Z-Axis set to global.';
 }
@@ -115,12 +110,10 @@ function toggleBranding() {
 		main.ui.recordingBranding.activated = true;
 		return 'Branding enabled.';
 	}
-	
 	if (!main.ui.recordingBranding.elem.hidden) {
 		main.ui.recordingBranding.elem.hidden = true;
 		return 'Branding Disabled.';
 	}
-	
 	main.ui.recordingBranding.elem.hidden = false;
 	return 'Branding enabled.';
 }
@@ -139,6 +132,52 @@ function enableStudioMode() {
 	main.ui.studioPanel.v();
 	return 'Successfully executed.';
 }
+```
+
+​
+### Extra Camera Settings
+Batch of simple one-line scripts to edit camera settings.
+> All of these scripts were provided publicly by Jasper on the noclip Discord.
+
+#### Change Mouse Panning Sensitivity
+Changes how fast the camera looks around when panning.
+
+**Usage:** Run as shown below. The default value is `500`.
+- Higher values mean lower sensitivity. `Infinity` is valid and makes mouse panning impossible.
+- Negative values are valid and invert the panning axes.
+- ⚠️ Setting `0` or other invalid values will freeze the camera irreversibly until a page refresh.
+```js
+main.viewer.cameraController.mouseLookSpeed = 500
+```
+
+#### Change Camera Panning Speed Smoothness & Slipperiness
+Changes smoothness & slipperiness of the camera when panning to look around.
+
+**Usage:** Run as shown below. The default value is `0` (No smoothing/slipperiness)
+- The two values should be equal for the best results, but you can modify the script to make them different if you want.
+- Values around `0.9...` give the camera panning the "cinematic" feel.
+- Value `1` makes the camera retain panning speed until manually affected.
+- Values above `1` will make the camera panning build up speed rather than slowing down.
+- Negative values are extremely buggy and shouldn't be used.
+- ⚠️ Negative values or values above `1` can potentially cause a blackscreen until a page refresh.
+```js
+let t_mLDv = 0
+main.viewer.cameraController.mouseLookDragFast = t_mLDv;
+main.viewer.cameraController.mouseLookDragSlow = t_mLDv;
+```
+
+#### Change Camera Movement Slipperiness
+Changes how fast the camera fully stops after you stop moving around.
+
+**Usage:** Run as shown below. The default value is `0.8`.
+- Value `0` makes full stop instant.
+- Values around `0.9...` give the camera the "slippery ice" feel.
+- Value `1` makes the camera retain it's speed forever until manually affected.
+- Values above `1` will make the camera build up speed rather than slowing down.
+- Negative values are extremely buggy and shouldn't be used.
+- ⚠️ Negative values or values above `1` can potentially cause a blackscreen until a page refresh.
+```js
+main.viewer.cameraController.keyMoveDrag = 0.8
 ```
 
 ​
