@@ -19,6 +19,7 @@ To use these scripts, you can either manually copy and paste them directly on th
   - [Change Orthographic Camera Near and Far Planes](/SCRIPTS.md#change-orthographic-camera-near-and-far-planes)
   - [Toggle noclip.website Branding](/SCRIPTS.md#toggle-noclipwebsite-branding)
   - [Enable Studio Mode](/SCRIPTS.md#enable-studio-mode)
+  - [Export Local Savestates and Studio Mode Data](/SCRIPTS.md#export-local-savestates-and-studio-mode-data)
   - [Extra Camera Settings](/SCRIPTS.md#extra-camera-settings)
     - [Change Mouse Panning Sensitivity](/SCRIPTS.md#change-mouse-panning-sensitivity)
     - [Change Camera Panning Speed Smoothness & Slipperiness](/SCRIPTS.md#change-camera-panning-speed-smoothness--slipperiness)
