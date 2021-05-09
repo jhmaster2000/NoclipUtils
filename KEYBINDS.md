@@ -25,4 +25,4 @@ Keybind | Description
 `[` or `Numpad 7` | Take screenshot.
 Number keys `1` to `9` | Load savestate #
 `Shift` + Number keys `1` to `9` | Save local savestate #
-`Numpad 3` | Export local noclip data (Local savestates + Studio mode animations)
+`Numpad 3` | Export local noclip data (Local savestates + Studio mode data)
