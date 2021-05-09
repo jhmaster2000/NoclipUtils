@@ -137,6 +137,18 @@ function enableStudioMode() {
 ```
 
 ​
+### Export Local Savestates and Studio Mode Data
+Exports locally created savestates and studio mode animations to a downloaded `.nclsp` plaintext file.
+
+*This script serves as an alternative to pressing `Numpad 3` for those without a numpad.*
+> This script was provided publicly by Jasper on the noclip Discord.
+
+**Usage:** Run as shown below.
+```js
+main._exportSaveData()
+```
+
+​
 ### Extra Camera Settings
 Batch of simple one-line scripts to edit camera settings.
 > All of these scripts were provided publicly by Jasper on the noclip Discord.
