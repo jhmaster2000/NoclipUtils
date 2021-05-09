@@ -60,4 +60,5 @@ To use these scripts, you can either manually copy and paste them directly on th
   - [Toggle Objects Visibility](/SCRIPTS.md#toggle-objects-visibility)
 
 ​
+- [Keybinds](/KEYBINDS.md)
 - [Debug Scripts](/DEBUG_SCRIPTS.md)
