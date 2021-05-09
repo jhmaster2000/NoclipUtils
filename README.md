@@ -1,5 +1,5 @@
 # NoclipUtils
-Unofficial collection of keybinds and random browser console utility scripts to use on [noclip.website](https://noclip.website/).
+Unofficial collection of keybinds and random browser console utility scripts to use on [noclip.website](https://noclip.website/)
 
 ## Disclaimers
 - None of these are guaranteed to remain working and can break at anytime due to changes to the main website without warning.
