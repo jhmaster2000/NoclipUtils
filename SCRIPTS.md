@@ -122,21 +122,6 @@ function toggleBranding() {
 ```
 
 ​
-### Enable Studio Mode
-Enables the *Work In Progress* Studio mode for making cinematic cameras.
-> This script was provided publicly by Jasper on the noclip Discord.
-
-> ⚠️ This script requires reloading the page to disable.
-
-**Usage:** `enableStudioMode()` or just `main.ui.studioPanel.v()` directly.
-```js
-function enableStudioMode() {
-	main.ui.studioPanel.v();
-	return 'Successfully executed.';
-}
-```
-
-​
 ### Export Local Savestates and Studio Mode Data
 Exports locally created savestates and studio mode animations to a downloaded `.nclsp` plaintext file.
 
