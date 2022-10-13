@@ -305,6 +305,36 @@ main.currentSceneDesc.controller.cameraK = 0.125
 ```
 
 ​
+### Toggle all switches in use
+Toggles all valid SW_A, SW_B, SW_APPEAR and SW_DEAD switches on the current galaxy either **on** or **off**.
+
+**Usage:** `SMG_toggleAllSwitches(String: act)`
+- Argument MUST be either `on` or `off`, anything else will error.
+
+```js
+function SMG_toggleAllSwitches(act) {
+	[
+		...main.scene.sceneObjHolder.switchWatcherHolder.watchers,
+		...main.scene.sceneObjHolder.nameObjHolder.nameObjs.filter(o => o.stageSwitchCtrl)
+	].forEach(x => {
+		const switchCtrl = x.switchCtrl ?? x.stageSwitchCtrl;
+		if (switchCtrl.isValidSwitchA()) {
+			switchCtrl[`${act}SwitchA`](main.scene.sceneObjHolder);
+		}
+		if (switchCtrl.isValidSwitchB()) {
+			switchCtrl[`${act}SwitchB`](main.scene.sceneObjHolder);
+		}
+		if (switchCtrl.isValidSwitchAppear()) {
+			switchCtrl[`${act}SwitchAppear`](main.scene.sceneObjHolder);
+		}
+		if (switchCtrl.isValidSwitchDead()) {
+			switchCtrl[`${act}SwitchDead`](main.scene.sceneObjHolder);
+		}
+	});
+}
+```
+
+​
 
 ​
 ## Paper Mario: The Thousand Year Door Scripts
