@@ -13,7 +13,10 @@ These scripts (hopefully) work anywhere on the website.
 ### Teleport Camera
 Teleports the camera to the specified coordinates.
 
-**Usage:** `teleport(Number: x, Number: y, Number: z)`
+**Usage:**
+```js
+teleport(x: Number, y: Number, z: Number) => void
+```
 ```js
 function teleport(x, y, z) {
 	if (!x || !y || !z) return console.warn('All three coordinates required.');
@@ -40,7 +43,10 @@ Modes:
 
 Hint: Use the keybinds `U` and `O` to tilt the camera on either mode.
 
-**Usage:** `toggleCameraUpAxisMode()`
+**Usage:**
+```js
+toggleCameraUpAxisMode() => void
+```
 ```js
 function toggleCameraUpAxisMode() {
 	let useViewUp = main.viewer.cameraController.useViewUp;
@@ -104,7 +110,10 @@ main.viewer.cameraController.farPlane = 100000
 Toggles the bottom-right noclip branding used by Jasper on his Twitter videos.
 > The `main.ui.recordingBranding.v()` code snippet was provided publicly by Jasper on the noclip Discord.
 
-**Usage:** `toggleBranding()`
+**Usage:**
+```js
+toggleBranding() => void
+```
 ```js
 function toggleBranding() {
 	if (!main.ui.recordingBranding.activated) {
@@ -195,7 +204,10 @@ Sliding the slider will make all objects not covered by the slider not visible u
 Clicking **Select** will also make the currently selected object on the slider flash for 3 seconds and print the object in the console.
 > This script was provided publicly by Jasper on the noclip Discord.
 
-**Usage:** `SMG_getObjectSlider()`
+**Usage:**
+```js
+SMG_getObjectSlider() => void
+```
 ```js
 function SMG_getObjectSlider() {
 	let objectList = main.scene.sceneObjHolder.nameObjHolder.nameObjs;
@@ -207,9 +219,12 @@ function SMG_getObjectSlider() {
 ### Teleport To Object
 Teleports the camera to the targetted object.
 
-**Usage:** `SMG_teleportTo(String: objname, Number: index)`
+**Usage:**
+```js
+SMG_teleportTo(objname: String, index: Number = 0) => void
+```
 - objname: Must be the object's internal SMG name, for example `AstroCore` for the Comet Observatory's core.
-- index: (Optional parameter - Default: 0) If there are multiple instances of an object, such as `Coin`, use this 0-indexed incrementing value to pick between instances.
+- index: (Optional - Default: 0) If there are multiple instances of an object, such as `Coin`, use this 0-indexed incrementing value to pick between instances.
 
 ```js
 function SMG_teleportTo(objname, index) {
@@ -231,9 +246,12 @@ function SMG_teleportTo(objname, index) {
 ### Warp Object to Camera
 Warps (teleports) a targetted object to the current camera position.
 
-**Usage:** `SMG_warpHere(String: objname, Number: index)`
+**Usage:**
+```js
+SMG_warpHere(objname: String, index: Number = 0)
+```
 - objname: Must be the object's internal SMG name, for example `AstroCore` for the Comet Observatory's core.
-- index: (Optional parameter - Default: 0) If there are multiple instances of an object, such as `Coin`, use this 0-indexed incrementing value to pick between instances.
+- index: (Optional - Default: 0) If there are multiple instances of an object, such as `Coin`, use this 0-indexed incrementing value to pick between instances.
 
 ```js
 function SMG_warpHere(objname, index) {
@@ -258,7 +276,10 @@ Forces all objects from every scenario (mission) in the current galaxy to be vis
 This also makes objects that require events to appear become visible without needing to activate said events, since most events aren't possible to activate on noclip.
 > ⚠️ This script requires reloading the page to disable.
 
-**Usage:** `SMG_allObjectsVisible()`
+**Usage:**
+```js
+SMG_allObjectsVisible() => void
+```
 ```js
 function SMG_allObjectsVisible() {
 	let objectList = main.scene.sceneObjHolder.nameObjHolder.nameObjs;
@@ -306,9 +327,12 @@ main.currentSceneDesc.controller.cameraK = 0.125
 
 ​
 ### Toggle all switches in use
-Toggles all valid SW_A, SW_B, SW_APPEAR and SW_DEAD switches on the current galaxy either **on** or **off**.
+Toggles all valid `SW_A`, `SW_B`, `SW_APPEAR` and/or `SW_DEAD` switches on the current galaxy either **on** or **off**.
 
-**Usage:** `SMG_toggleAllSwitches(String: act)`
+**Usage:**
+```js
+SMG_toggleAllSwitches(act: 'on' | 'off') => void
+```
 - Argument MUST be either `on` or `off`, anything else will error.
 
 ```js
@@ -507,10 +531,13 @@ Spawns into the map brand new objects based off their numeric ID in the game.
 *I don't know of any list for these IDs, so just try some IDs and see what they are.*
 > This script was provided publicly by Jasper on the noclip Discord.
 
-**Usage:** `PW64_spawnObject(Number: objID, Number: x, Number: y, Number: z)`
+**Usage:**
+```js
+PW64_spawnObject(objID: Number, x: Number = 0, y: Number = 0, z: Number = 0) => String
+```
 - objID: Required parameter. The ID of the object to spawn. Must be between **0** and **362**.
   - The error: `Uncaught TypeError: Cannot read property 'uvmd' of undefined` means you entered an invalid ID.
-- x, y and z: (Optional parameters - All default to `0`) The X, Y (height) and Z coordinates to spawn the object at.
+- x, y and z: (Optionals - All default to `0`) The X, Y (height) and Z coordinates to spawn the object at.
 
 ```js
 function PW64_spawnObject(objID, x, y, z) {
