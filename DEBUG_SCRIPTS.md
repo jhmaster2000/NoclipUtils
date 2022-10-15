@@ -22,24 +22,24 @@ A fancy hex viewer directly on the console for ArrayBuffer objects.
 
 **Usage:**
 ```js
-main.debugJunk.hexdump(ArrayBuffer: data, Number: start_offset, Number: length)
+main.debugJunk.hexdump(data: ArrayBuffer, start_offset: Number = 0, length: Number = 0x100)
 ```
 - data: the ArrayBuffer to create a hex view of.
-- start_offset: (Optional parameter - Default value: `0x0`) the hex offset to start the hex view from.
-- length: (Optional parameter - Default value: `0x100`) the amount of bytes to display on the hex view from the start_offset.
+- start_offset: (Optional - Default value: `0x0`) the hex offset to start the hex view from.
+- length: (Optional - Default value: `0x100`) the amount of bytes to display on the hex view from the start_offset.
 
 ​
 ### interactiveVizSliderSelect
 On-screen dynamic slider with selector that takes an array of objects as input and filters them by a boolean property.
-> Example usage on the [Display Object Slider](/SCRIPTS.md#display-object-slider) for SMG1/2
+> Example usage on the [Display Object Slider](/SCRIPTS.md#display-object-slider) script for SMG1/2
 
 **Usage:**
 ```js
-main.debugJunk.interactiveVizSliderSelect(Array: objects, String: property, Function: callback)
+main.debugJunk.interactiveVizSliderSelect(objects: Array, property: String = 'visible', callback?: Function)
 ```
 - objects: An array of objects to be filtered into the slider.
-- property: (Optional parameter - Default value: `'visible'`) The boolean property in the root of the objects of the array to filter the objects with. Only objects whose property is `true` will be put into the slider.
-- callback: (Optional parameter - Default value: none) A function to be called when an object is selected on the slider. Receives one parameter with the index of the selected object as a Number.
+- property: (Optional - Default value: `'visible'`) The boolean property in the root of the objects of the array to filter the objects with. Only objects whose property is `true` will be put into the slider.
+- callback: (Optional - Default value: none) A function to be called when an object is selected on the slider. Receives one parameter with the index of the selected object as a Number.
 
 ​
 
@@ -60,7 +60,7 @@ The execution order of multiple callbacks assigned to the same key will be the s
 
 **Usage:**
 ```js
-main.viewer.inputManager.registerKeyTrigger(String: keycode, Function: callback)
+main.viewer.inputManager.registerKeyTrigger(keycode: String, callback: Function)
 ```
 - keycode: The keyboard key to assign as keybind. Example: `KeyG` (Assigns the letter **G** key)
 - callback: The function to run when the keybind is pressed.
