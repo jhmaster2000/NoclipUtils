@@ -12,7 +12,7 @@ To use these scripts, you can either manually copy and paste them directly on th
 
 ## Contents Index
 - **[Global Scripts](/SCRIPTS.md#global-scripts)**
-  - [Teleport Camera](/SCRIPTS.md#teleport-camera)
+  - [Teleport Cameras](/SCRIPTS.md#teleport-cameras) (WASD, Orbit, Orbit Origin, Ortho)
   - [Toggle Camera Upward Axis](/SCRIPTS.md#toggle-camera-upward-axis)
   - [Toggle Pointer Lock](/SCRIPTS.md#toggle-pointer-lock)
   - [Change Game Time Speed Scale](/SCRIPTS.md#change-game-time-speed-scale)
