@@ -10,8 +10,11 @@ You're welcome to try running game-specific scripts on other games, but they wil
 ## Global Scripts
 These scripts (hopefully) work anywhere on the website.
 
-### Teleport Camera
-Teleports the camera to the specified coordinates.
+### Teleport Cameras
+A group of scripts for teleporting the different camera types to specified coordinates.
+
+#### WASD Camera
+Teleports the WASD camera to the specified coordinates.
 
 **Usage:**
 ```js
@@ -19,16 +22,88 @@ teleport(x: Number, y: Number, z: Number) => void
 ```
 ```js
 function teleport(x, y, z) {
-	if (!x || !y || !z) return console.warn('All three coordinates required.');
-	if (isNaN(x) || isNaN(y) || isNaN(z)) return console.warn('Invalid coordinates.');
-	if (x === null) x = main.viewer.camera.worldMatrix[12];
-	if (y === null) y = main.viewer.camera.worldMatrix[13];
-	if (z === null) z = main.viewer.camera.worldMatrix[14];
-	main.viewer.camera.worldMatrix[12] = x;
-	main.viewer.camera.worldMatrix[13] = y;
-	main.viewer.camera.worldMatrix[14] = z;
+	const wmtx = main.viewer.camera.worldMatrix;
+    	x ??= wmtx[12]; y ??= wmtx[13]; z ??= wmtx[14];
+        x ||= 0; y ||= 0; z ||= 0;
+	wmtx[12] = x;
+	wmtx[13] = y;
+	wmtx[14] = z;
 	main.viewer.cameraController.forceUpdate = true;
-	return console.log('Teleported to: ' + x + ' ' + y + ' ' + z);
+	console.log('Teleported to: ' + x + ' ' + y + ' ' + z);
+}
+```
+
+#### Orbit Camera
+Teleports the orbit camera to the specified coordinates around the origin point.
+
+If `absolute` is set to `true` (default), teleports to the exact XYZ given regardless of the origin point.
+
+If `absolute` is set to `false`, teleports to the XYZ relative to the origin point.
+
+**Usage:**
+```js
+teleportOrbit(x: Number, y: Number, z: Number, absolute?: Boolean) => void
+```
+```js
+function teleportOrbit(x, y, z, absolute = true) {
+    	const [tX, tY, tZ] = main.viewer.cameraController.translation;
+    	const wmtx = main.viewer.camera.worldMatrix;
+    	x ??= wmtx[12]; y ??= wmtx[13]; z ??= wmtx[14];
+        x ||= 0; y ||= 0; z ||= 0;
+        if (absolute) { x -= tX; y -= tY; z -= tZ; }
+    	const oZ = Math.hypot(Math.hypot(x, z), y);
+    	const oY =  Math.acos(y / oZ * -1);
+    	const oXtmp = x / oZ / Math.sin(oY);
+    	const XnegZpos = x < 0 && z >= 0;
+    	const XposZpos = x >= 0 && z >= 0;
+    	const oX = XnegZpos ? Math.acos(oXtmp * -1) * -1 : (XposZpos ? Math.acos(oXtmp) - Math.PI : Math.acos(oXtmp * -1));
+    	main.viewer.cameraController.x = oX || 0;
+    	main.viewer.cameraController.y = oY || 0;
+    	main.viewer.cameraController.zTarget = -Math.abs(oZ) || -10;
+	console.log('Teleported to: ' + x + ' ' + y + ' ' + z);
+}
+```
+
+#### Orbit Camera Origin
+Teleports the orbit camera's origin point to the specified coordinates.
+
+**Usage:**
+```js
+teleportOrigin(x: Number, y: Number, z: Number) => void
+```
+```js
+function teleportOrigin(x, y, z) {
+    const camCtrl = main.viewer.cameraController;
+    x ??= camCtrl.translation[0];
+    y ??= camCtrl.translation[1];
+    z ??= camCtrl.translation[2];
+    x ||= 0; y ||= 0; z ||= 0;
+    camCtrl.translation[0] = x;
+    camCtrl.translation[1] = y;
+    camCtrl.translation[2] = z;
+    console.log('Teleported orbit origin to: ' + x + ' ' + y + ' ' + z);
+}
+```
+
+#### Ortho Camera
+Teleports the ortho camera to the specified coordinates.
+> ⚠️ This script only works as expected with the ortho camera facing directly downwards (Use `Numpad 8` to force it to face straight down).
+
+**Usage:**
+```js
+teleportOrtho(x: Number, y: Number, z: Number) => void
+```
+```js
+function teleportOrtho(x, y, z) {
+    const camCtrl = main.viewer.cameraController;
+    x ??= camCtrl.translation[0];
+    y ??= camCtrl.zTarget;
+    z ??= camCtrl.translation[2];
+    x ||= 0; z ||= 0; y = -Math.abs(y) || -10;
+    camCtrl.translation[0] = x;
+    camCtrl.translation[2] = z;
+    camCtrl.zTarget = y;
+    console.log('Teleported to: ' + x + ' ' + y + ' ' + z);
 }
 ```
 
