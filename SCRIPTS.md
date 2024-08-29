@@ -12,8 +12,11 @@ These scripts (hopefully) work anywhere on the website.
 
 ### Force V-Sync Framerate
 On some systems/browsers configurations noclip might run the GPU unbounded, resulting in unreasonably and unnecessarily high GPU usage. This script aims to fix that by allowing you to force the website renderer to V-Sync to a specified framerate desired, such as 60.
+> **Note:** Noclip's FPS indicator in the Statistics panel is a CPU frames unit, not rendered frames unit, as such it is not tied to this and will not remotely match any configured FPS values with this script.
 
 **Usage:** Change `60` below to the desired target FPS. Change it to `null` to disable V-Sync.
+> [!IMPORTANT]
+> This script is a **hack**, as such it is inaccurate and the inputted VSYNC_FPS value is a *rough estimate of a target FPS*, NOT the real FPS value that will be reached, the real FPS will generally be lower than the VSYNC_FPS value due to frames lost to browser timing inaccuracies, the degree of how bad these inaccuracies are will vary by browser and OS.
 ```js
 globalThis.VSYNC_FPS = 60
 ```
