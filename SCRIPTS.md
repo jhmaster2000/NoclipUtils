@@ -10,6 +10,24 @@ You're welcome to try running game-specific scripts on other games, but they wil
 ## Global Scripts
 These scripts (hopefully) work anywhere on the website.
 
+### Force V-Sync Framerate
+On some systems/browsers configurations noclip might run the GPU unbounded, resulting in unreasonably and unnecessarily high GPU usage. This script aims to fix that by allowing you to force the website renderer to V-Sync to a specified framerate desired, such as 60.
+
+**Usage:** Change `60` below to the desired target FPS. Change it to `null` to disable V-Sync.
+```js
+globalThis.VSYNC_FPS = 60
+```
+```js
+requestAnimationFrame = function requestAnimationFrame(callback) {
+    const fps = globalThis.VSYNC_FPS ?? 0;
+    const mspf = 1000 / fps;
+    return setTimeout(() => callback(document.timeline.currentTime), mspf);
+}
+cancelAnimationFrame = function cancelAnimationFrame(id) {
+    clearTimeout(id);
+}
+```
+
 ### Teleport Cameras
 A group of scripts for teleporting the different camera types to specified coordinates.
 
