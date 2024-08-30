@@ -31,6 +31,32 @@ cancelAnimationFrame = function cancelAnimationFrame(id) {
 }
 ```
 
+### Calculate Effective Rendered FPS
+Noclip's FPS indicator in the Statistics panel is a CPU frames unit, not rendered frames unit, this script can calculate the real rendered FPS for your current environment.
+
+**Usage:**
+> [!NOTE]
+> The default script behavior is designed as a visual feedback in the console and does not actually *return* the FPS value, for advanced scripting purposes use the `await calcFPS(0)` call format to disable logging and obtain the FPS value returned as a number.
+```js
+calcFPS()
+```
+```js
+function calcFPS(log = true) {
+    const promise = new Promise((resolve) => {
+        log && console.log('Calculating effective FPS... (This may take a second)');
+        const runs = 60, start = performance.now();
+        let frame = runs;
+        (function cb() {
+            if (frame--) return void requestAnimationFrame(cb);
+            const fps = Math.round(1000 * runs / (performance.now() - start));
+            log && console.log(`Calculated: ~${fps} frames per second`);
+            resolve(fps);
+        })();
+    });
+    return log ? undefined : promise;
+}
+```
+
 ### Teleport Cameras
 A group of scripts for teleporting the different camera types to specified coordinates.
 
