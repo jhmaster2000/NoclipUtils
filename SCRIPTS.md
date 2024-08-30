@@ -19,6 +19,7 @@ On some systems/browsers configurations noclip might run the GPU unbounded, resu
 - Set it to `Infinity` to force uncapped FPS (even if you had native V-Sync!).
 > [!IMPORTANT]
 > This script is a **hack**, as such it is inaccurate and the inputted VSYNC_FPS value is a *rough estimate of a target FPS*, NOT the real FPS value that will be reached, the real FPS will generally be lower than the VSYNC_FPS value due to frames lost to browser timing inaccuracies, the degree of how bad these inaccuracies are will vary by browser, OS and game/map chosen on noclip (based on how heavy it is to render), and increasingly worsen the higher VSYNC_FPS is. See [Calculate Effective Rendered FPS](#calculate-effective-rendered-fps) for a way to check your current real FPS value.
+
 ```js
 globalThis.VSYNC_FPS = 60
 ```
@@ -43,6 +44,7 @@ Noclip's FPS indicator in the Statistics panel is a CPU frames unit, not rendere
 **Usage:**
 > [!NOTE]
 > The default script behavior is designed as a visual feedback in the console and does not actually *return* the FPS value, for advanced scripting purposes use the `await calcFPS(0)` call format to disable logging and obtain the FPS value returned as a number.
+
 ```js
 calcFPS()
 ```
