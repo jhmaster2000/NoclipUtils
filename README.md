@@ -12,6 +12,8 @@ To use these scripts, you can either manually copy and paste them directly on th
 
 ## Contents Index
 - **[Global Scripts](/SCRIPTS.md#global-scripts)**
+  - [Force V-Sync Framerate](/SCRIPTS.md#force-v-sync-framerate)
+  - [Calculate Effective Rendered FPS](/SCRIPTS.md#calculate-effective-rendered-fps)
   - [Teleport Cameras](/SCRIPTS.md#teleport-cameras) (WASD, Orbit, Orbit Origin, Ortho)
   - [Toggle Camera Upward Axis](/SCRIPTS.md#toggle-camera-upward-axis)
   - [Toggle Pointer Lock](/SCRIPTS.md#toggle-pointer-lock)
