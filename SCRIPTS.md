@@ -12,21 +12,25 @@ These scripts (hopefully) work anywhere on the website.
 
 ### Force V-Sync Framerate
 On some systems/browsers configurations noclip might run the GPU unbounded, resulting in unreasonably and unnecessarily high GPU usage. This script aims to fix that by allowing you to force the website renderer to V-Sync to a specified framerate desired, such as 60.
-> **Note:** Noclip's FPS indicator in the Statistics panel is a CPU frames unit, not rendered frames unit, as such it is not tied to this and will not remotely match any configured FPS values with this script.
+> **Note:** Noclip's FPS indicator in the Statistics panel will not match any configured FPS values of this kind, see [Calculate Effective Rendered FPS](#calculate-effective-rendered-fps) script for details.
 
-**Usage:** Change `60` below to the desired target FPS. Change it to `null` to disable V-Sync (may not be the same as native behavior without this script applied).
+**Usage:** Change `60` below to the desired target FPS. Set it to `0` to disable forced V-Sync override.
 > [!IMPORTANT]
-> This script is a **hack**, as such it is inaccurate and the inputted VSYNC_FPS value is a *rough estimate of a target FPS*, NOT the real FPS value that will be reached, the real FPS will generally be lower than the VSYNC_FPS value due to frames lost to browser timing inaccuracies, the degree of how bad these inaccuracies are will vary by browser, OS and game/map chosen on noclip (based on how heavy it is to render), and increasingly worsen the higher VSYNC_FPS is.
+> This script is a **hack**, as such it is inaccurate and the inputted VSYNC_FPS value is a *rough estimate of a target FPS*, NOT the real FPS value that will be reached, the real FPS will generally be lower than the VSYNC_FPS value due to frames lost to browser timing inaccuracies, the degree of how bad these inaccuracies are will vary by browser, OS and game/map chosen on noclip (based on how heavy it is to render), and increasingly worsen the higher VSYNC_FPS is. See [Calculate Effective Rendered FPS](#calculate-effective-rendered-fps) for a way to check your current real FPS value.
 ```js
 globalThis.VSYNC_FPS = 60
 ```
 ```js
+const nativeReqAnimFrame = requestAnimationFrame;
+const nativeCancelAnimFrame = cancelAnimationFrame;
 requestAnimationFrame = function requestAnimationFrame(callback) {
-    const fps = globalThis.VSYNC_FPS ?? 0;
+    if (!globalThis.VSYNC_FPS) return nativeReqAnimFrame(callback);
+    const fps = globalThis.VSYNC_FPS;
     const mspf = 1000 / fps;
     return setTimeout(() => callback(document.timeline.currentTime), mspf);
 }
 cancelAnimationFrame = function cancelAnimationFrame(id) {
+    if (!globalThis.VSYNC_FPS) return nativeCancelAnimFrame(id);
     clearTimeout(id);
 }
 ```
